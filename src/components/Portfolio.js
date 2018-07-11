@@ -16,13 +16,54 @@ import TMG from '../TMG.png';
 import tnpark from '../images/tn-park.png';
 import roadTrip from '../images/roadTrip.png';
 import bitcoin from '../images/bitcoin.png';
+
 import reduxTodo from '../images/redux-todo1.png';
 import calculator from '../images/calculator.png';
 import weather from '../images/weather.png';
+import modal from '../images/Modal.png';
 class Portfolio extends React.Component {
   render() {
     return (
       <div className="portfolio-container">
+        <PortfolioPiece
+          title="React Modals"
+          image={modal}
+          description={
+            <div>
+              <h2>React Modals</h2>
+              <p>
+                This is a React app featuring Modals. In this case the modal is
+                the larger image of each thumbnail. I used some of the more
+                advanced react techniques for this such as portals and render
+                props. I also React Spring for animations, Styled Components for
+                styling, Cloudinary for image hosting and re-sizing, and
+                React-With-Gesture for better functionality on touch screens.
+                <br />
+                <strong>Technology Used:</strong> React, React Spring, Styled
+                Components, Cloudinary, React-With-Gesture.
+              </p>
+
+              <br />
+              <a
+                href="https://react-modal-43288.firebaseapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Click Here For Demo!
+              </a>
+              <br />
+              <a
+                href="https://github.com/zachandblue/React-Modal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <small>GitHub Repo</small>
+              </a>
+            </div>
+          }
+          popUp={() => this.props.popUp('19')}
+          key="18"
+        />
         <PortfolioPiece
           title="Redux Weather App"
           image={weather}

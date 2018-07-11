@@ -132,14 +132,19 @@ class App extends Component {
     const image = document.querySelectorAll('.portfolio-piece-container');
 
     const description = document.querySelectorAll('.project-description');
-    console.log(description);
+
+    const width = window.matchMedia('(max-width: 500px)');
+
     i = description.length - 1 - i;
-    setTimeout(function() {
-      image[i].scrollIntoView({
-        behavior: 'smooth',
-        block: 'center'
-      });
-    }, 200);
+    if (!width.matches) {
+      setTimeout(function() {
+        image[i].scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+      }, 200);
+    }
+
     image[i].classList.toggle('expand');
     description[i].classList.toggle('show');
   }

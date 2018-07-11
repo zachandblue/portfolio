@@ -150,7 +150,7 @@ h4 {
   height: 70vh;
   text-align: center;
   align-items: f;
-  background: url("./images/glasses.jpg");
+  background: url('./images/glasses.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 60%;
@@ -178,7 +178,7 @@ h4 {
 }
 
 .zach-photo {
-  background: url("./images/zach.jpg");
+  background: url('./images/zach.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 15vw;
@@ -221,73 +221,73 @@ h4 {
 }
 
 .icon-1 {
-  background: url("./images/html5.svg");
+  background: url('./images/html5.svg');
 }
 .icon-2 {
-  background: url("./images/CSS3.svg");
+  background: url('./images/CSS3.svg');
 }
 .icon-3 {
-  background: url("./images/JS.svg");
+  background: url('./images/JS.svg');
 }
 .icon-4 {
-  background: url("./images/React.svg");
+  background: url('./images/React.svg');
 }
 .icon-5 {
-  background: url("./images/git.svg");
+  background: url('./images/git.svg');
 }
 .icon-6 {
-  background: url("./images/heroku.svg");
+  background: url('./images/heroku.svg');
 }
 .icon-7 {
-  background: url("./images/jQuery.svg");
+  background: url('./images/jQuery.svg');
 }
 .icon-8 {
-  background: url("./images/Node.svg");
+  background: url('./images/Node.svg');
 }
 .icon-9 {
-  background: url("./images/wordpress.png");
+  background: url('./images/wordpress.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .icon-10 {
-  background: url("./images/firebase.png");
+  background: url('./images/firebase.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .icon-11 {
-  background: url("./images/vue.png");
+  background: url('./images/vue.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .icon-12 {
-  background: url("./images/mongodb.png");
+  background: url('./images/mongodb.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .icon-13 {
-  background: url("./images/sass.svg");
+  background: url('./images/sass.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .icon-14 {
-  background: url("./images/redux.png");
+  background: url('./images/redux.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .icon-15 {
-  background: url("./images/jest.png");
+  background: url('./images/jest.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .icon-16 {
-  background: url("./images/enzyme.png");
+  background: url('./images/enzyme.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -394,10 +394,12 @@ nav .navs {
   transition: 0.1s ease;
   overflow: hidden;
   z-index: 3;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .portfolio-piece-container:hover {
   transform: scale(0.91);
-  outline: 2px solid var(--blue);
+  /* outline: 2px solid var(--blue); */
 }
 
 .expand {
@@ -623,10 +625,17 @@ input {
     -o-transition: 0.01s ease;
 
     transition: 0.01s ease;
-    overflow-y: scroll;
+    overflow-y: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
+
   .portfolio-piece-container:hover {
     transform: scale(0.9);
+    outline: none;
+  }
+  .portfolio-piece-container:focus {
+    outline: none;
   }
   .project-description,
   .expand {
