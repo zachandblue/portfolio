@@ -292,6 +292,12 @@ h4 {
   background-repeat: no-repeat;
   background-position: center;
 }
+.icon-17 {
+  background: url('./images/styled-components.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .blue {
   color: #5faff4;

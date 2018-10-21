@@ -6,6 +6,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 
 import Contact from './components/Contact';
+import Otherside from './components/Otherside';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -235,6 +236,7 @@ class App extends Component {
                   />
                 )}
               />
+              <Route exact path="/otherside" render={props => <Otherside />} />
             </Switch>
           </main>
         </div>

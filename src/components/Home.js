@@ -35,6 +35,7 @@ class Home extends React.Component {
           <div className="icon icon-1" />
           <div className="icon icon-2" />
           <div className="icon icon-13" />
+          <div className="icon icon-17" />
           <div className="icon icon-3" />
           <div className="icon icon-4" />
           <div className="icon icon-14" />

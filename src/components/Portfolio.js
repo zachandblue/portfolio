@@ -21,10 +21,86 @@ import reduxTodo from '../images/redux-todo1.png';
 import calculator from '../images/calculator.png';
 import weather from '../images/weather.png';
 import modal from '../images/Modal.png';
+import swipe from '../images/swipe.jpg';
+import homeland from '../images/homeland.png';
+
 class Portfolio extends React.Component {
   render() {
     return (
       <div className="portfolio-container">
+        <PortfolioPiece
+          title="Vue Season Guide"
+          image={homeland}
+          description={
+            <div>
+              <h2>Homeland Season Guide</h2>
+              <p>
+                Season guide for Homeland using Vue and the TVmaze API. The app
+                pulls the titles, images, and summaries from the API. I chose
+                Homeland because it had a complete set of data to work with.
+                <br />
+                <strong>Technology Used:</strong> Vue, Vue-Router, Fetch API
+              </p>
+
+              <br />
+              <a
+                href="https://vue-season-guide.firebaseapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Click Here For Demo!
+              </a>
+              <br />
+              <a
+                href="https://github.com/zachandblue/Vue-Season-Guide"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <small>GitHub Repo</small>
+              </a>
+            </div>
+          }
+          popUp={() => this.props.popUp('21')}
+          key="21"
+        />
+        <PortfolioPiece
+          title="React Swipe"
+          image={swipe}
+          description={
+            <div>
+              <h2>React Swipe</h2>
+              <p>
+                This is a React photo album app that uses React Spring to
+                animate the "swiping" left or right motion. You can also click
+                and drag to change to the next picture. React-with-gesture helps
+                it work well on touchscreens, and Cloudinary hosts and sizes the
+                images.
+                <br />
+                <strong>Technology Used:</strong> React, React Spring, Styled
+                Components, Cloudinary, React-With-Gesture
+              </p>
+
+              <br />
+              <a
+                href="https://react-swipe.firebaseapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Click Here For Demo!
+              </a>
+              <br />
+              <a
+                href="https://github.com/zachandblue/React-Modal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <small>GitHub Repo</small>
+              </a>
+            </div>
+          }
+          popUp={() => this.props.popUp('20')}
+          key="20"
+        />
         <PortfolioPiece
           title="React Modals"
           image={modal}
@@ -36,11 +112,10 @@ class Portfolio extends React.Component {
                 the larger image of each thumbnail. I used some of the more
                 advanced react techniques for this such as portals and render
                 props. I also React Spring for animations, Styled Components for
-                styling, Cloudinary for image hosting and re-sizing, and
-                React-With-Gesture for better functionality on touch screens.
+                styling, and Cloudinary for image hosting and re-sizing.
                 <br />
                 <strong>Technology Used:</strong> React, React Spring, Styled
-                Components, Cloudinary, React-With-Gesture.
+                Components, Cloudinary
               </p>
 
               <br />
@@ -62,7 +137,7 @@ class Portfolio extends React.Component {
             </div>
           }
           popUp={() => this.props.popUp('19')}
-          key="18"
+          key="19"
         />
         <PortfolioPiece
           title="Redux Weather App"
